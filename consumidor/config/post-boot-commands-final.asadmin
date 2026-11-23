@@ -1,0 +1,11 @@
+
+deploy /opt/payara/deployments/reportes-worker.war
+
+
+
+
+
+
+
+
+

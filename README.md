@@ -1,1 +1,0 @@
-# proyecto_arquitectura_de_software

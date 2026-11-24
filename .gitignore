@@ -1,9 +1,3 @@
-# =====================================================================
-#  ServiRED - .gitignore raíz
-#  Cada módulo puede tener además su propio .gitignore.
-# =====================================================================
-
-# ---------- Secretos y variables de entorno (TODOS los módulos) ----------
 .env
 .env.*
 !.env.example
@@ -21,28 +15,21 @@ secrets/
 google-services.json
 local.properties
 
-# ---------- SO / editores ----------
 .DS_Store
 Thumbs.db
 desktop.ini
 .vscode/
 *.swp
 
-# ---------- ingesta (.NET) ----------
 ingesta/bin/
 ingesta/obj/
 
-# ---------- consumidor (Payara) ----------
-# Contraseña de administración de Payara (usar passwordFile.example)
 consumidor/passwordFile
-# Sesión / caché del cliente asadmin
 consumidor/.gfclient/
-# Credenciales y llaves del dominio
 consumidor/appserver/glassfish/domains/domain1/config/admin-keyfile
 consumidor/appserver/glassfish/domains/domain1/config/local-password
 consumidor/appserver/glassfish/domains/domain1/config/domain-passwords
 consumidor/appserver/glassfish/domains/domain1/config/keystore.p12
-# Archivos que Payara genera al ejecutarse
 consumidor/appserver/glassfish/domains/domain1/logs/
 consumidor/appserver/glassfish/domains/domain1/osgi-cache/
 consumidor/appserver/glassfish/domains/domain1/generated/
